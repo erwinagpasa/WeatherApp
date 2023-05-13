@@ -9,11 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-          LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .topLeading, endPoint: .trailing)
-            .edgesIgnoringSafeArea(.all)
+      ZStack {
+        LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .topLeading, endPoint: .trailing)
+          .edgesIgnoringSafeArea(.all)
+        
+        VStack {
+          Text("Philippines, IN")
+            .font(.system(size:32, weight: .medium, design: .default))
+            .foregroundColor(.white)
+            .padding()
+          Spacer() //This make the test moved to Top
         }
-    
+        
+      }
     }
 }
 
